@@ -1,0 +1,21 @@
+﻿@model Employee
+
+
+<h1>Create</h1>
+
+<form asp-controller="Employee" asp-action="Create">
+	<div class="my-3">
+		<label asp-for="Name">Name</label>
+		<input asp-for="Name" class="form-control"/>
+</div>
+	<div class="my-3">
+		<label asp-for="Email">Email</label>
+		<input asp-for="Email" class="form-control" />
+	</div>
+	<div class="my-3">
+		<label asp-for="password">password</label>
+		<input asp-for="password" class="form-control" />
+	</div>
+	<button asp-action="Create" type="submit" class="btn btn-outline-primary">Create</button>
+	
+</form>
